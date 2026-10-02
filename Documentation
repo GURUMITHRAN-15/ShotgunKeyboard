@@ -1,0 +1,276 @@
+# 🔫 ShotgunKeyboard
+
+> A real-time keyboard sound and visual feedback system designed to transform ordinary keyboard input into an interactive audiovisual experience.
+
+## 🚀 Overview
+
+**ShotgunKeyboard** is an interactive keyboard application that connects physical keyboard input with synchronized audio and visual feedback.
+
+When a key is pressed, the system responds with:
+
+* ⌨️ Keyboard interaction
+* 🔊 Sound feedback
+* 💡 Visual feedback
+* ✨ Key animations
+* ⚡ Synchronized audiovisual effects
+
+The project was initially developed as **ShotgunKeyboard V1** and later upgraded to **V2** with additional interaction, visualization, synchronization, and user-control features.
+
+---
+
+# ✨ Features
+
+## ⌨️ Interactive Keyboard
+
+The application detects keyboard input in real time and provides immediate visual and audio feedback.
+
+## 🔊 Sound Feedback
+
+Individual keyboard interactions can trigger corresponding audio effects.
+
+The existing V1 sound system is preserved in V2.
+
+## 💡 Visual Feedback
+
+Keyboard events can trigger visual effects such as:
+
+* Key highlighting
+* Flash effects
+* Animations
+* Visual feedback synchronized with sound
+
+## ⚡ Sound + Visual Synchronization
+
+ShotgunKeyboard focuses on making sound and visual feedback feel like a single event.
+
+The synchronization system can be tested using:
+
+```text
+tests/sync-test.html
+```
+
+The synchronization tester allows different timing offsets to be tested.
+
+Example:
+
+```text
+-20 ms
+-10 ms
+  0 ms
++10 ms
++20 ms
+```
+
+---
+
+# 🧪 Sync Test
+
+Open:
+
+```text
+tests/sync-test.html
+```
+
+The tester provides:
+
+* 🔊 Audio beep
+* 💡 Visual flash
+* ⏱️ Adjustable light delay
+* 🔁 Repeated testing
+* Zero-delay calibration
+
+### Meaning of delay
+
+```text
+Negative value
+→ Light occurs before sound
+
+0 ms
+→ Sound and light are triggered together
+
+Positive value
+→ Light occurs after sound
+```
+
+---
+
+# 🆚 V1 → V2
+
+ShotgunKeyboard V2 is an incremental upgrade rather than a complete rewrite.
+
+### V1
+
+The original version established:
+
+* Keyboard input
+* Sound feedback
+* Visual interaction
+* Core application UI
+* Basic audiovisual response
+
+### V2
+
+V2 extends the original system with additional features while preserving the existing functionality.
+
+The upgrade follows the principle:
+
+```text
+V1
+ +
+New Features
+ =
+V2
+```
+
+Existing keyboard mappings, sound behavior, and core interactions are preserved wherever possible.
+
+---
+
+# 🏗️ Architecture
+
+The application follows a simple event-driven architecture:
+
+```text
+Keyboard Input
+      │
+      ▼
+Keyboard Event Handler
+      │
+      ├───────────────┐
+      ▼               ▼
+   Sound          Visual Effect
+      │               │
+      └───────┬───────┘
+              ▼
+       Synchronized
+       User Feedback
+```
+
+---
+
+# 📂 Project Structure
+
+The exact structure may vary depending on the current implementation.
+
+A typical structure is:
+
+```text
+ShotgunKeyboard/
+│
+├── README.md
+├── src/
+├── assets/
+│   ├── audio/
+│   ├── images/
+│   └── icons/
+│
+├── tests/
+│   └── sync-test.html
+│
+└── docs/
+```
+
+---
+
+# 💻 Running the Project
+
+## Option 1 — Open directly
+
+If the application is a static web project, open its main HTML file in a modern browser.
+
+Recommended browsers:
+
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+
+For audio functionality, interact with the page first if the browser requires user interaction before playing audio.
+
+---
+
+# 🛠️ Development
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/ShotgunKeyboard.git
+```
+
+Enter the project:
+
+```bash
+cd ShotgunKeyboard
+```
+
+Then run the project using the development method required by the current project structure.
+
+---
+
+# 🧪 Testing
+
+Before releasing a new version, verify:
+
+```text
+✓ Application loads
+✓ Keyboard input works
+✓ Existing sound mappings work
+✓ Visual effects work
+✓ New V2 features work
+✓ Sound and visual effects remain synchronized
+✓ No missing assets
+✓ No major console errors
+```
+
+---
+
+# 🎯 Project Goals
+
+The main goals of ShotgunKeyboard are:
+
+1. Create responsive keyboard interaction.
+2. Provide immediate audio feedback.
+3. Provide synchronized visual feedback.
+4. Explore audiovisual interaction.
+5. Minimize perceived latency.
+6. Create an extensible foundation for future keyboard effects.
+
+---
+
+# 🔮 Future Improvements
+
+Possible future improvements include:
+
+* Custom sound packs
+* User-created key mappings
+* Advanced synchronization calibration
+* More visual effects
+* Theme customization
+* Audio waveform visualization
+* Performance monitoring
+* Custom profiles
+* Additional keyboard layouts
+
+These are potential future ideas and are not necessarily part of the current release.
+
+---
+
+# 📜 License
+
+Add your chosen license here.
+
+For example:
+
+```text
+MIT License
+```
+
+---
+
+# 👨‍💻 Project
+
+**Project:** ShotgunKeyboard
+**Version:** V1
+**Type:** Interactive audiovisual keyboard system
+**Author:GURUMITHRAN**
+
+Built as an experimental project exploring real-time keyboard interaction, sound feedback, visual effects, and synchronization.
