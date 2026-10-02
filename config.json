@@ -1,0 +1,12 @@
+{
+  "armed": true,
+  "duration_ms": 180,
+  "intensity": 70,
+  "launch_minimized": false,
+  "max_voices": 16,
+  "pitch": 100,
+  "repeat_on_hold": true,
+  "restore_armed": false,
+  "start_with_windows": false,
+  "volume": 55
+}

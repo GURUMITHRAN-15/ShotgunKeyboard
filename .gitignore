@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+build/
+dist/*.exe
+*.spec
+shotgunkeyboard.log*
+config.json.bad
+venv/

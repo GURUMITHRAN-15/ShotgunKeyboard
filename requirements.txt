@@ -1,0 +1,10 @@
+# Runtime (Python 3.11 - 3.13, Windows 10/11 64-bit)
+numpy==2.4.4
+Pillow==12.1.1
+keyboard==0.13.5
+pystray==0.19.5
+sounddevice==0.5.5
+PySide6==6.11.2
+
+# Packaging only
+pyinstaller==6.22.3
